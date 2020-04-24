@@ -1,18 +1,18 @@
 <template>
   <div class="home">
-    <img alt="MDB logo" src="../assets/logo-mdb-vue-small.png">
-    <HelloWorld msg="Welcome to Your MDB Vue.js App"/>
+    <img alt="MDB logdo" src="../assets/logo.png">
+    <Login/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Login from '@/components/Login.vue'
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    Login
   }
 }
 </script>
