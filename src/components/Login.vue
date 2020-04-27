@@ -14,15 +14,14 @@
         </form>
       </mdb-col>
     </mdb-row>
-    <ApiKeyModal :apikey="apiKey" :modal="modal" />
+    <ApiKeyModal :apikey="apiKey" :modal="modal" :name="name" />
   </mdb-container>
 </template>
 
 <script>
 
   import ApiKeyModal from "./ApiKeyModal";
-  const apiUrl = "http://localhost:8000/api";
-  let apiEndPoint = apiUrl + "/login";
+  let apiEndPoint = process.env.VUE_APP_API_URL + "/login";
 
   import {mdbBtn, mdbCol, mdbRow, mdbContainer, mdbInput} from "mdbvue";
   import axios from 'axios';
@@ -49,13 +48,11 @@
       submitForm: function (event) {
         event.preventDefault();
         this.errors = [];
-        console.log(this)
         if (this.name.length < 4) {
           this.errors.push('Name required.')
 
           return;
         }
-
         axios.post(apiEndPoint, {
           name: this.name
         }).then(response => {
@@ -64,11 +61,8 @@
             this.modal = true
           } else {
             this.modal = false
-            //redirect to page
+            this.$router.push(`/events/${this.name}`)
           }
-          // this.$emit('update:modal', this.modal)
-          console.log(response.data);
-          console.log(response);
           // eslint-disable-next-line no-unused-vars
         }, response => {});
       },
