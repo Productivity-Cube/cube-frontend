@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: productivity-cube-fe
+  description: productivity cube
+  tags:
+    - typescript
+    - backstage
+    - frontend
+    - node
+    - express
+    - ai
+    - test
+  namespace: others
+  links:
+    - url: https://github.com/piotrpasich/test2
+      title: GitHub Repository
+      icon: github
+  annotations:
+    backstage.io/source-location: url:https://github.com/Productivity-Cube/cube-frontend
+spec:
+  type: frontend
+  lifecycle: development
+  owner: "group:default/global-technology"
