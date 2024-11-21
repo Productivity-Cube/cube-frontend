@@ -18,6 +18,7 @@ metadata:
       icon: github
   annotations:
     backstage.io/source-location: url:https://github.com/Productivity-Cube/cube-frontend
+    circleci.com/project-slug: github/Productivity-Cube/cube-frontend
 spec:
   type: frontend
   lifecycle: development
