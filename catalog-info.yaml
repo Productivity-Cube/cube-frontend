@@ -19,17 +19,21 @@ metadata:
   annotations:
     backstage.io/source-location: url:https://github.com/Productivity-Cube/cube-frontend
     circleci.com/project-slug: github/Productivity-Cube/cube-frontend
-    organizationstructure: cc53c425-8fe1-444f-8e27-6182223fc31e
+    organizationstructure: 3a78fa62-9260-40c2-87f1-ff3bc3ded2ec
     name: Business Operations / Strategy & Governance / M&A Management
     id: ff5552f6-4306-4e64-ab32-d8955aea134b
     category: businessUnit
     type: BusinessCapability
-    leanix:organizationstructure:name: News Corp / Dow Jones / Dow Jones UK
-    leanix:organizationstructure:id: 3a78fa62-9260-40c2-87f1-ff3bc3ded2ec
-    leanix:organizationstructure:category: businessUnit
-    leanix:businesscapability:name: Business Operations / Strategy & Governance / M&A Management
-    leanix:businesscapability:id: ff5552f6-4306-4e64-ab32-d8955aea134b
-    leanix:businesscapability:type: BusinessCapability
+    leanix/organizationstructure-name: News Corp / HarperCollins Publishing / Harlequin
+    leanix/organizationstructure-id: 3a78fa62-9260-40c2-87f1-ff3bc3ded2ec
+    leanix/organizationstructure-category: businessUnit
+    leanix/businesscapability-name: Create Compelling Content / Content Creation / Audio Generation
+    leanix/businesscapability-id: 7d0da176-e838-446b-b51b-3cf828ddf25a
+    leanix/businesscapability-type: BusinessCapability
+    leanix/techcategory-name: Delivery / Development / Design & Development
+    leanix/techcategory-id: 8bc7cace-6aaf-45f6-a5f6-98d66c8b13f8
+    leanix/techcategory-type: TechnicalStack
+
 
 spec:
   type: frontend
