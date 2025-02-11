@@ -33,7 +33,9 @@ metadata:
     leanix/techcategory-name: Delivery / Development / Design & Development
     leanix/techcategory-id: 8bc7cace-6aaf-45f6-a5f6-98d66c8b13f8
     leanix/techcategory-type: TechnicalStack
-
+    leanix/application-name: Adobe Creative Cloud - HQ (NCS-4)
+    leanix/application-id: 80484e09-aa26-4fc6-a1f4-ac66e92d59e6
+    leanix/application-type: Application
 
 spec:
   type: frontend
